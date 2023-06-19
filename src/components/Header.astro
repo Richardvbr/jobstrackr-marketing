@@ -11,8 +11,12 @@
     </a>
     <nav>
       <ul>
-        <li><a href='https://app.jobstrackr.app/sign-up'>Sign up</a></li>
-        <li><a href='https://app.jobstrackr.app/log-in'>Log in</a></li>
+        <li class='log-in'>
+          <a href='https://app.jobstrackr.app/log-in'>Log in</a>
+        </li>
+        <li class='sign-up'>
+          <a href='https://app.jobstrackr.app/sign-up'>Sign up</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -24,9 +28,8 @@
   }
 
   .container {
-    width: 80rem;
     margin: auto;
-    padding: 10px 0;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,21 +37,50 @@
 
   img {
     display: block;
-    max-width: 165px;
+    max-width: 125px;
   }
 
   ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   ul li a {
-    color: var(--text-dark);
     text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+  ul .log-in a {
+    color: black;
+    background-color: var(--primary);
+    padding: 9px 15px;
+    transition: all 0.2s;
   }
 
-  ul li a:hover {
-    color: var(--text-black);
+  ul .log-in a:hover {
+    background-color: #dfdbd3;
+  }
+
+  ul .sign-up a {
+    color: white;
+    background-color: var(--secondary);
+    padding: 9px 15px;
+  }
+
+  ul .sign-up a:hover {
+    background-color: #1c1d20;
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      max-width: 75rem;
+    }
+
+    img {
+      max-width: 165px;
+    }
   }
 </style>
