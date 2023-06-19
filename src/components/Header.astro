@@ -21,7 +21,7 @@
     </nav>
   </div>
 </header>
-<style>
+<style lang='scss'>
   header {
     width: 100%;
     border-bottom: 1px solid var(--border-light);
@@ -33,62 +33,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
 
-  img {
-    display: block;
-    max-width: 125px;
-  }
+    img {
+      display: block;
+      max-width: 125px;
+    }
 
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
 
-  ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 5px;
-    padding: 8px 12px;
-  }
-  ul .log-in a {
-    color: black;
-    background-color: var(--primary);
-    transition: all 0.2s;
-  }
+      li a {
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 8px 12px;
+      }
 
-  ul .log-in a:hover {
-    background-color: #dfdbd3;
-  }
+      .log-in a {
+        color: black;
+        background-color: var(--primary);
+        transition: all 0.2s;
+        &:hover {
+          background-color: #dfdbd3;
+        }
+      }
 
-  ul .sign-up a {
-    color: white;
-    background-color: var(--secondary);
-  }
-
-  ul .sign-up a:hover {
-    background-color: #1c1d20;
+      .sign-up a {
+        color: white;
+        background-color: var(--secondary);
+        &:hover {
+          background-color: #1c1d20;
+        }
+      }
+    }
   }
 
   @media (min-width: 600px) {
     .container {
       max-width: 75rem;
       padding: 15px 20px;
-    }
 
-    img {
-      max-width: 165px;
-    }
+      img {
+        max-width: 165px;
+      }
 
-    ul {
-      gap: 20px;
-    }
+      ul {
+        gap: 20px;
 
-    ul li a {
-      padding: 9px 15px;
+        li a {
+          padding: 9px 15px;
+        }
+      }
     }
   }
 </style>
