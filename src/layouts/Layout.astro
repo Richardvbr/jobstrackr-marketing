@@ -1,7 +1,7 @@
 ---
 import '@fontsource/inter';
 import Header from '../components/Header.astro';
-import '../styles/reset.css';
+import '../styles/main.scss';
 
 export interface Props {
   title: string;
@@ -31,33 +31,3 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global>
-  :root {
-    --primary: #e9e5dd;
-    --secondary: #25262b;
-    --gray-accent: #dadada;
-    --text-dark: #444;
-    --text-black: #000;
-    --border-light: #dadada;
-    --border-dark: #bbb3a5;
-  }
-
-  html {
-    font-family: 'inter', sans-serif;
-    background-color: #f6f6f6;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 70rem;
-  }
-</style>

@@ -1,0 +1,35 @@
+@mixin btn {
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (min-width: $breakpoint-l) {
+    font-size: 15px;
+  }
+}
+
+@mixin btn-primary {
+  @include btn;
+  color: black;
+  background-color: $primary;
+  border: 1px solid $gray-accent;
+  padding: 9px 15px;
+  &:hover {
+    background-color: darken($primary, 4);
+  }
+}
+
+@mixin btn-secondary {
+  @include btn;
+  color: white;
+  background-color: $secondary;
+  padding: 9px 15px;
+  &:hover {
+    background-color: darken($secondary, 4);
+  }
+}

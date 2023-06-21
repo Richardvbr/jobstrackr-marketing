@@ -19,9 +19,10 @@
   </div>
 </header>
 <style lang='scss'>
+  @import '../styles/_variables.scss';
   header {
     width: 100%;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid $border-light;
   }
 
   .container {
@@ -50,18 +51,10 @@
 
       .log-in a {
         color: black;
-        background-color: var(--primary);
+        background-color: $primary;
         transition: all 0.2s;
         &:hover {
           background-color: #dfdbd3;
-        }
-      }
-
-      .sign-up a {
-        color: white;
-        background-color: var(--secondary);
-        &:hover {
-          background-color: #1c1d20;
         }
       }
     }
