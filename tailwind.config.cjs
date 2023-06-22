@@ -13,6 +13,7 @@ module.exports = {
     fontFamily: {
       inter: 'Inter, sans-serif',
       satoshi: 'Satoshi, sans-serif',
+      matter: 'Matter, sans-serif',
     },
     borderWidth: {
       DEFAULT: '1px',
