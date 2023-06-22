@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom properties */
+@layer components {
+  .btn-primary {
+    @apply rounded-md border border-gray-accent px-5 py-2 font-medium hover:border-border-light  hover:bg-gray-100;
+  }
+  .btn-secondary {
+    @apply rounded-md bg-secondary/90 px-5 py-2 font-medium text-white hover:bg-secondary;
+  }
+  .transition {
+    @apply transition-all ease-in-out;
+  }
+}
+
+/*  Fonts */
 @layer base {
-  /* INTER */
+  /* Inter */
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -52,7 +66,7 @@
     src: url('/fonts/Inter-Regular.woff2') format('woff2');
   }
 
-  /* SATOSHI */
+  /* Satoshi */
   @font-face {
     font-family: 'Satoshi';
     font-style: normal;
