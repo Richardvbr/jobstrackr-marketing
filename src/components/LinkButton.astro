@@ -1,0 +1,12 @@
+---
+export interface Props {
+  href: string;
+  label: string;
+  type: 'primary' | 'secondary';
+  customClass?: string;
+}
+
+const { type, label, href, customClass } = Astro.props;
+---
+
+<a class={`btn-${type} transition ${customClass}`} href={href}>{label}</a>

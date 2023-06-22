@@ -1,4 +1,5 @@
 ---
+import LinkButton from './LinkButton.astro';
 ---
 
 <header class='gray-accent w-screen py-4'>
@@ -28,9 +29,11 @@
         </li>
       </ul>
     </nav>
-    <a
+    <LinkButton
       href='https://portal.jobstrackr.app'
-      class='btn-primary ml-auto transition'>Log in</a
-    >
+      label='Log in'
+      type='primary'
+      customClass='ml-auto'
+    />
   </div>
 </header>

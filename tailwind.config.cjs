@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
+  safelist: ['btn-primary', 'btn-secondary', 'transition'],
   theme: {
     screens: {
       sm: '640px',
@@ -26,13 +27,16 @@ module.exports = {
       width: {
         '7xl': '77rem',
       },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+        'spin-slow-reverse': 'spin 6s linear infinite reverse',
+      },
       colors: {
         primary: '#e9e5dd',
         secondary: '#1e1e1e',
         white: '#fff',
         black: '#000',
         'gray-accent': '#dadada',
-        'text-dark': '#444',
         'border-light': '#b2b2b2',
       },
     },
