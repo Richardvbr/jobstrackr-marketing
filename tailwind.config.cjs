@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}'],
   theme: {
@@ -11,6 +10,10 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
+    fontFamily: {
+      inter: 'Inter, sans-serif',
+      satoshi: 'Satoshi, sans-serif',
+    },
     borderWidth: {
       DEFAULT: '1px',
       2: '2px',
@@ -20,9 +23,6 @@ module.exports = {
       6: '6px',
     },
     extend: {
-      fontFamily: {
-        sans: ['InterVariable', 'Inter', ...defaultTheme.fontFamily.sans],
-      },
       width: {
         '7xl': '77rem',
       },
