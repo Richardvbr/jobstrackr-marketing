@@ -36,6 +36,7 @@ module.exports = {
         secondary: '#1e1e1e',
         white: '#fff',
         black: '#0d0d0d',
+        green: '#07391b',
         'gray-accent': '#dadada',
         'border-light': '#b2b2b2',
       },
