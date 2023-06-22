@@ -1,6 +1,6 @@
 ---
 import Header from '../components/Header.astro';
-import '../styles/input.css';
+import '../styles/tailwind.css';
 
 export interface Props {
   title: string;
@@ -25,7 +25,7 @@ const { title } = Astro.props;
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class='font-satoshi'>
     <Header />
     <slot />
   </body>
