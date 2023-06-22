@@ -35,7 +35,7 @@ module.exports = {
         primary: '#e9e5dd',
         secondary: '#1e1e1e',
         white: '#fff',
-        black: '#000',
+        black: '#0d0d0d',
         'gray-accent': '#dadada',
         'border-light': '#b2b2b2',
       },
