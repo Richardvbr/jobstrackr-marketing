@@ -1,8 +1,43 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {},
-	},
-	plugins: [],
-}
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  dark: false,
+  theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      5: '5px',
+      6: '6px',
+    },
+    extend: {
+      fontFamily: {
+        sans: ['InterVariable', 'Inter', ...defaultTheme.fontFamily.sans],
+      },
+      width: {
+        '7xl': '77rem',
+      },
+      colors: {
+        primary: '#e9e5dd',
+        secondary: '#25262b',
+        white: '#fff',
+        black: '#000',
+        'gray-accent': '#dadada',
+        'text-dark': '#444',
+        'border-light': '#dadada',
+        'border-dark': '#bbb3a5',
+      },
+    },
+  },
+  plugins: [],
+};

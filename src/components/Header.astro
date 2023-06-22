@@ -1,81 +1,39 @@
 ---
 ---
 
-<header>
-  <div class='container'>
+<header class='gray-accent w-screen py-4'>
+  <div
+    class='m-auto flex items-center gap-4 px-4 py-4 lg:w-7xl lg:gap-16 lg:px-0'
+  >
     <a href='/'>
       <img
+        class='w-[90px] lg:w-[125px]'
         src='/assets/images/logo_cropped_transparent.svg'
         alt='JobsTrackr logo'
       />
     </a>
     <nav>
-      <ul>
-        <li class='log-in'>
-          <a href='https://portal.jobstrackr.app'>Log in</a>
+      <ul class='flex gap-4 lg:gap-6'>
+        <li>
+          <a
+            href='#features'
+            class='rounded-md p-2 text-sm text-gray-700 transition-all ease-in-out hover:bg-gray-100 hover:text-gray-900'
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href='#faq'
+            class='rounded-md p-2 text-sm text-gray-700 transition-all ease-in-out hover:bg-gray-100 hover:text-gray-900'
+            >FAQ</a
+          >
         </li>
       </ul>
     </nav>
+    <a
+      href='https://portal.jobstrackr.app'
+      class='bg-primay ml-auto rounded-md bg-gray-100 px-3 py-2 font-medium hover:outline hover:outline-1 hover:outline-gray-accent'
+      >Log in</a
+    >
   </div>
 </header>
-<style lang='scss'>
-  @import '../styles/_variables.scss';
-  header {
-    width: 100%;
-    border-bottom: 1px solid $border-light;
-  }
-
-  .container {
-    margin: auto;
-    padding: 15px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      display: block;
-      max-width: 125px;
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 10px;
-
-      li a {
-        text-decoration: none;
-        font-weight: 500;
-        border-radius: 5px;
-        padding: 8px 12px;
-      }
-
-      .log-in a {
-        color: black;
-        background-color: $primary;
-        transition: all 0.2s;
-        &:hover {
-          background-color: #dfdbd3;
-        }
-      }
-    }
-  }
-
-  @media (min-width: 600px) {
-    .container {
-      max-width: 75rem;
-      padding: 15px 20px;
-
-      img {
-        max-width: 165px;
-      }
-
-      ul {
-        gap: 20px;
-
-        li a {
-          padding: 9px 15px;
-        }
-      }
-    }
-  }
-</style>
