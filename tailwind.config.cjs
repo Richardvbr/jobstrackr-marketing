@@ -15,6 +15,17 @@ module.exports = {
       inter: 'Inter, sans-serif',
       satoshi: 'Satoshi, sans-serif',
     },
+    colors: {
+      primary: '#e9e5dd',
+      secondary: '#1e1e1e',
+      white: '#fff',
+      black: '#0d0d0d',
+      green: '#07391b',
+      'gray-100': '#f3f4f6',
+      'gray-400': '#94a3b8',
+      'gray-600': '#475569',
+      'gray-700': '#334155',
+    },
     borderWidth: {
       DEFAULT: '1px',
       2: '2px',
@@ -24,14 +35,6 @@ module.exports = {
       6: '6px',
     },
     extend: {
-      colors: {
-        primary: '#e9e5dd',
-        secondary: '#1e1e1e',
-        white: '#fff',
-        black: '#0d0d0d',
-        green: '#07391b',
-        'gray-accent': '#dadada',
-      },
       width: {
         '7xl': '77rem',
       },
