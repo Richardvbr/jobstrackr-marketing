@@ -24,13 +24,6 @@ module.exports = {
       6: '6px',
     },
     extend: {
-      width: {
-        '7xl': '77rem',
-      },
-      animation: {
-        'spin-slow': 'spin 4s linear infinite',
-        'spin-slow-reverse': 'spin 6s linear infinite reverse',
-      },
       colors: {
         primary: '#e9e5dd',
         secondary: '#1e1e1e',
@@ -38,7 +31,13 @@ module.exports = {
         black: '#0d0d0d',
         green: '#07391b',
         'gray-accent': '#dadada',
-        'border-light': '#b2b2b2',
+      },
+      width: {
+        '7xl': '77rem',
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+        'spin-slow-reverse': 'spin 6s linear infinite reverse',
       },
     },
   },
