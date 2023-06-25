@@ -36,7 +36,7 @@ module.exports = {
     },
     extend: {
       width: {
-        '7xl': '77rem',
+        '7xl': '70rem',
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',

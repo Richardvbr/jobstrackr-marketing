@@ -1,9 +1,10 @@
-<section
-  id='features'
-  class='min-h-[50rem] bg-gradient-to-br from-black via-black to-green'
->
-  <div class='mx-auto px-4 py-16 lg:w-7xl lg:py-36'>
-    <div class='max-w-3xl'>
+---
+import FeatureCard from './FeatureCard.astro';
+---
+
+<section id='features' class='bg-black bg-gradient-to-br py-16 lg:py-36'>
+  <div class='mx-auto px-4 lg:w-7xl'>
+    <div class='md:text-center'>
       <h2 class='mb-4 text-3xl font-bold tracking-tight text-white'>
         Everything you need to manage your job search
       </h2>
@@ -14,5 +15,39 @@
         that dream job.
       </p>
     </div>
+  </div>
+  <div
+    class='mx-auto mt-20 grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:w-7xl lg:grid-cols-3'
+  >
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
+    <FeatureCard
+      icon='test'
+      title='Feature'
+      description="This is a card describing one of JobsTrack's features."
+    />
   </div>
 </section>
