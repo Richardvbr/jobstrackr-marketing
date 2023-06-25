@@ -1,9 +1,42 @@
 ---
 import FeatureCard from './FeatureCard.astro';
+const features = [
+  {
+    iconName: 'creditcard',
+    title: 'Free to use',
+    description: 'Completely free to use. No credit card required.',
+  },
+  {
+    iconName: 'dashboard',
+    title: 'Convenient dashboard',
+    description: 'Dashboard view giving a clear overview of your job search.',
+  },
+  {
+    iconName: 'list',
+    title: 'Track your applications',
+    description: 'Easily track your job applications.',
+  },
+  {
+    iconName: 'responsive',
+    title: 'Use on all your devices',
+    description: 'Fully responsive and usable on desktop, tablet, and mobile.',
+  },
+  {
+    iconName: 'privacy',
+    title: 'Fully secure and private',
+    description: "We don't share your personal information with anyone.",
+  },
+  {
+    iconName: 'code',
+    title: 'Constant new features',
+    description:
+      'In active development and new features are being added regularly.',
+  },
+];
 ---
 
 <section id='features' class='bg-black bg-gradient-to-br py-16 lg:py-36'>
-  <div class='mx-auto px-4 lg:w-7xl'>
+  <div class='mx-auto px-4 lg:max-w-7xl'>
     <div class='md:text-center'>
       <h2 class='mb-4 text-3xl font-bold tracking-tight text-white'>
         Everything you need to manage your job search
@@ -17,37 +50,16 @@ import FeatureCard from './FeatureCard.astro';
     </div>
   </div>
   <div
-    class='mx-auto mt-20 grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:w-7xl lg:grid-cols-3'
+    class='mx-auto mt-20 grid grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:max-w-7xl lg:grid-cols-3 lg:gap-10'
   >
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
-    <FeatureCard
-      icon='test'
-      title='Feature'
-      description="This is a card describing one of JobsTrack's features."
-    />
+    {
+      features.map(({ iconName, title, description }) => (
+        <FeatureCard
+          iconName={iconName}
+          title={title}
+          description={description}
+        />
+      ))
+    }
   </div>
 </section>

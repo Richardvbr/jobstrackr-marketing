@@ -1,14 +1,18 @@
 ---
+import { Icon } from 'astro-icon';
 export interface Props {
-  icon: string;
+  iconName: string;
   title: string;
   description: string;
 }
 
-const { icon, title, description } = Astro.props;
+const { iconName, title, description } = Astro.props;
 ---
 
-<div class='rounded-lg bg-secondary p-10 shadow-xl'>
+<div class='rounded-lg bg-secondary p-6 shadow-xl'>
+  <div class='mb-4 max-w-[30px] text-white'>
+    <Icon name={iconName} />
+  </div>
   <h1 class='text-md mb-4 font-bold text-white'>
     {title}
   </h1>
