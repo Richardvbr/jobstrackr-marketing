@@ -2,20 +2,18 @@
 import LinkButton from './LinkButton.astro';
 ---
 
-<section class='mx-auto px-4 py-10 lg:max-w-7xl lg:py-36'>
-  <div class='flex flex-col gap-10 lg:flex-row lg:gap-32'>
-    <div class='max-w-auto'>
-      <h1 class='text-gray-900 mb-6 text-4xl font-black tracking-tight'>
+<section class='mx-auto text-center px-4 py-10 lg:max-w-7xl lg:py-48'>
+      <h1 class='text-stone-900 text-6xl font-black tracking-tight mb-8'>
         Streamline your job search
       </h1>
-      <p class='text-lg font-medium text-gray-600'>
+      <p class='text-lg font-medium max-w-2xl mx-auto text-stone-500 mb-10'>
         Say goodbye to the chaos of managing multiple job applications and
         embrace a seamless and user-friendly experience. With JobsTrackr, you
         can effortlessly manage and keep track of your job search in one
         convenient dashboard.
       </p>
 
-      <div class='mt-6 flex gap-4'>
+      <div class='flex justify-center gap-6'>
         <LinkButton
           href='https://portal.jobstrackr.app'
           label='Log in'
@@ -27,7 +25,7 @@ import LinkButton from './LinkButton.astro';
           type='secondary'
         />
         <div
-          class='absolute left-1/2 top-20 z-[-1] hidden h-[1026px] w-[1026px] overflow-hidden [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:top-[12%] lg:ml-[15%] lg:block'
+          class='absolute left-1/2 top-20 z-[-1] hidden h-[1026px] w-[1026px] overflow-hidden [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:top-[5%] lg:ml-[0%] lg:block'
         >
           <svg
             viewBox='0 0 1026 1026'
@@ -82,13 +80,5 @@ import LinkButton from './LinkButton.astro';
             >
           </svg>
         </div>
-      </div>
     </div>
-    <!-- placeholder img -->
-    <img
-      class='shadow-xl md:mx-auto md:w-[50%] lg:w-[500px]'
-      src='https://placehold.co/500x300/FFF/FFF'
-      alt='JobsTrackr logo'
-    />
-  </div>
 </section>
