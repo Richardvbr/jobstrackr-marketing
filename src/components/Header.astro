@@ -63,7 +63,7 @@ import LinkButton from './LinkButton.astro';
       </div>
     </div>
     <!-- mobile menu -->
-    <div class='mobile-menu hidden absolute left-0 right-0 w-[92%] p-6 shadow-black/30 shadow-xl rounded-xl mx-auto bg-white'>
+    <div class='mobile-menu  absolute transform -translate-y-[500px] transition duration-300  left-0 right-0 w-[92%] p-6 shadow-black/30 shadow-xl rounded-xl mx-auto bg-white'>
       <ul>
         <li>
           <a href='#features' class='text-xl text-black font-medium block py-4'>Features</a>
@@ -85,22 +85,26 @@ import LinkButton from './LinkButton.astro';
   const elems = body && btn && menu && menuItem;
 
   if (elems) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('-translate-y-[500px]')
+      menu.classList.remove('hidden')
+      body.classList.toggle('bg-gray-300')
+    });
+
     menuItem?.addEventListener('click', () => {
-      menu.classList.add('hidden');
+      menu.classList.toggle('-translate-y-[500px]')
       body.classList.remove('bg-gray-300')
     });
 
     window.addEventListener('resize', () => {
       const width = window.innerWidth;
-      if (width >= 768) {
-        menu.classList.add('hidden');
+      let count = 0;
+      if (width >= 768 && count < 1) {
+        menu.classList.toggle('-translate-y-[500px]')
+        menu.classList.add('hidden')
         body.classList.remove('bg-gray-300')
+        count++;
       }
-    });
-
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      body.classList.toggle('bg-gray-300')
     });
   }
 </script>
