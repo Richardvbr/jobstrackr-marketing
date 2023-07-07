@@ -44,7 +44,7 @@ import LinkButton from './LinkButton.astro';
           />
         </div>
         <!-- Mobile menu button -->
-        <div class='flex items-center md:hidden'>
+        <div class='flex items-center md:hidden z-[99]'>
           <button class='mobile-menu-button outline-none'>
             <svg
               class='h-7 w-7'
@@ -63,15 +63,18 @@ import LinkButton from './LinkButton.astro';
       </div>
     </div>
     <!-- mobile menu -->
-    <div class='mobile-menu  absolute transform -translate-y-[500px] scale-0 transition duration-300 du  left-0 right-0 w-[92%] p-6 shadow-black/30 shadow-xl rounded-xl mx-auto bg-white'>
-      <ul>
-        <li>
-          <a href='#features' class='text-xl text-black font-medium block py-4'>Features</a>
-        </li>
-        <li>
-          <a href='#faq' class='text-xl text-black font-medium block py-4'>FAQ</a>
-        </li>
-      </ul>
+    <div class='mobile-menu absolute transform opacity-0  bg-gray-300/50 top-0 right-0 bottom-0 left-0 transition duration-200'>
+      <nav class='bg-white absolute top-24 left-0 right-0 w-[92%] p-6 mx-auto rounded-xl shadow-xl shadow-black/30'>
+        <ul>
+          <li>
+            <a href='#features' class='text-xl text-black font-medium block py-4'>Features</a>
+          </li>
+          <li>
+            <a href='#faq' class='text-xl text-black font-medium block py-4'>FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   </nav>
 </header>
@@ -86,26 +89,23 @@ import LinkButton from './LinkButton.astro';
 
   if (elems) {
     btn.addEventListener('click', () => {
-      menu.classList.toggle('-translate-y-[500px]')
-      menu.classList.toggle('scale-0')
+      menu.classList.toggle('opacity-0')
       menu.classList.remove('hidden')
-      body.classList.toggle('bg-gray-300')
+      body.classList.toggle('bg-gray-300/50')
     });
 
     menuItem?.addEventListener('click', () => {
-      menu.classList.toggle('-translate-y-[500px]')
-      menu.classList.toggle('scale-0')
-      body.classList.remove('bg-gray-300')
+      menu.classList.toggle('opacity-0')
+      body.classList.remove('bg-gray-300/50')
     });
 
     window.addEventListener('resize', () => {
       const width = window.innerWidth;
       let count = 0;
       if (width >= 768 && count < 1) {
-        menu.classList.toggle('-translate-y-[500px]')
-        menu.classList.toggle('scale-0')
+        menu.classList.toggle('opacity-0')
         menu.classList.add('hidden')
-        body.classList.remove('bg-gray-300')
+        body.classList.remove('bg-gray-300/50')
         count++;
       }
     });
