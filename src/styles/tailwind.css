@@ -5,10 +5,10 @@
 /* Custom properties */
 @layer components {
   .btn-primary {
-    @apply rounded-md border border-stone-400 px-5 py-2 font-medium hover:border-stone-600 hover:bg-stone-100;
+    @apply rounded-md border border-stone-400 px-5 py-2 font-medium hover:bg-stone-100;
   }
   .btn-secondary {
-    @apply rounded-md bg-secondary px-5 py-2 font-medium text-white hover:bg-secondary/90;
+    @apply rounded-md bg-black px-5 py-2 font-medium text-white hover:bg-black/80;
   }
   .transition {
     @apply transition-all ease-in-out;
