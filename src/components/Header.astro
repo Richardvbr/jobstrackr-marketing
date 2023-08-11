@@ -17,22 +17,20 @@ import LinkButton from './LinkButton.astro'
 						<li>
 							<a
 								href="#features"
-								class="hidden rounded-md p-2 font-medium text-stone-700 transition md:flex lg:hover:bg-stone-100 lg:hover:text-black"
-								>Features</a
+								class="hidden rounded-md p-2 font-medium text-stone-700 transition md:flex lg:hover:text-black">Features</a
 							>
 						</li>
 						<li>
-							<a
-								href="#faq"
-								class="hidden rounded-md p-2 font-medium text-stone-700 transition md:flex lg:hover:bg-stone-100 lg:hover:text-black"
+							<a href="#faq" class="hidden rounded-md p-2 font-medium text-stone-700 transition md:flex lg:hover:text-black"
 								>FAQ</a
 							>
 						</li>
 					</ul>
 				</div>
 				<!-- Secondary Navbar items -->
-				<div class="hidden items-center space-x-3 md:flex">
-					<LinkButton href="https://portal.jobstrackr.app" label="Log in" type="primary" customClasses="ml-auto" />
+				<div class="hidden items-center gap-3 space-x-3 md:flex">
+					<a href="https://portal.jobstrackr.app" class="font-medium text-stone-700 lg:hover:text-black">Log in</a>
+					<LinkButton href="https://portal.jobstrackr.app" label="Get started" type="secondary" />
 				</div>
 				<!-- Mobile menu button -->
 				<div class="z-[99] flex items-center md:hidden">
