@@ -1,36 +1,51 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/tailwind.css';
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import '../styles/tailwind.css'
 
 export interface Props {
-  title: string;
+	title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
-<!DOCTYPE html>
-<html lang='en' class='scroll-smooth'>
-  <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
-    <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-    <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-    <link rel='manifest' href='/site.webmanifest' />
-    <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#25262b' />
-    <meta name='msapplication-TileColor' content='#e9e5dd' />
-    <meta name='theme-color' content='#e9e5dd' />
-    <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body class='overflow-x-hidden font-satoshi'>
-    <Header />
-    <slot />
-    <Footer />
-  </body>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Everything you need to manage your job search." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#25262b" />
+		<meta name="msapplication-TileColor" content="#e9e5dd" />
+		<meta name="theme-color" content="#e9e5dd" />
+
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="JobsTrackr | Streamline your job search" />
+		<meta itemprop="description" content="Everything you need to manage your job search." />
+		<meta itemprop="image" content="/images/website.png" />
+
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://www.jobstrackr.app" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="JobsTrackr | Streamline your job search" />
+		<meta property="og:description" content="Everything you need to manage your job search." />
+		<meta property="og:image" content="/images/website.png" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="JobsTrackr | Streamline your job search" />
+		<meta name="twitter:description" content="Everything you need to manage your job search." />
+		<meta name="twitter:image" content="/images/website.png" />
+		<title>{title}</title>
+	</head>
+	<body class="overflow-x-hidden font-satoshi">
+		<Header />
+		<slot />
+		<Footer />
+	</body>
 </html>
-
-
