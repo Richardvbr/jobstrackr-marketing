@@ -13,7 +13,7 @@ import LinkButton from './LinkButton.astro'
 						</a>
 					</div>
 					<!-- Primary Navbar items -->
-					<ul class="flex list-none gap-4 lg:gap-6">
+					<!-- <ul class="flex list-none gap-4 lg:gap-6">
 						<li>
 							<a
 								href="#features"
@@ -25,78 +25,14 @@ import LinkButton from './LinkButton.astro'
 								>FAQ</a
 							>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 				<!-- Secondary Navbar items -->
 				<div class="hidden items-center gap-3 space-x-3 md:flex">
 					<a href="https://portal.jobstrackr.app/sign-in" class="font-medium text-stone-700 lg:hover:text-black">Log in</a>
 					<LinkButton href="https://portal.jobstrackr.app/sign-up" label="Get started" type="secondary" />
 				</div>
-				<!-- Mobile menu button -->
-				<div class="z-[99] flex items-center md:hidden">
-					<button class="mobile-menu-button outline-none">
-						<svg
-							class="h-7 w-7"
-							x-show="!showMenu"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path d="M4 6h16M4 12h16M4 18h16"></path>
-						</svg>
-					</button>
-				</div>
 			</div>
-		</div>
-		<!-- mobile menu -->
-		<div
-			class="mobile-menu invisible absolute bottom-0 left-0 right-0 top-0 transform bg-gray-300/50 opacity-0 transition duration-200"
-		>
-			<nav class="absolute left-0 right-0 top-24 mx-auto w-[92%] rounded-xl bg-white p-6 shadow-xl shadow-black/30">
-				<ul>
-					<li>
-						<a href="#features" class="block py-4 text-xl font-medium text-black">Features</a>
-					</li>
-					<li>
-						<a href="#faq" class="block py-4 text-xl font-medium text-black">FAQ</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
 	</nav>
 </header>
-
-<script>
-	const body = document.body
-	const btn = document.querySelector('button.mobile-menu-button')
-	const menu = document.querySelector('.mobile-menu')
-	const menuItem = document.querySelector('.mobile-menu li a')
-
-	const elems = body && btn && menu && menuItem
-
-	if (elems) {
-		btn.addEventListener('click', () => {
-			menu.classList.toggle('opacity-0')
-			menu.classList.toggle('invisible')
-			body.classList.toggle('bg-gray-300/50')
-		})
-
-		menuItem?.addEventListener('click', () => {
-			menu.classList.toggle('opacity-0')
-			menu.classList.toggle('invisible')
-			body.classList.remove('bg-gray-300/50')
-		})
-
-		window.addEventListener('resize', () => {
-			const width = window.innerWidth
-			if (width >= 768) {
-				menu.classList.add('opacity-0')
-				menu.classList.add('invisible')
-				body.classList.remove('bg-gray-300/50')
-			}
-		})
-	}
-</script>
