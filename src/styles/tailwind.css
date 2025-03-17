@@ -5,98 +5,98 @@
 
 /* Custom properties */
 @layer components {
-	.btn-primary {
-		@apply rounded-md border border-stone-400 px-5 py-2 font-medium hover:bg-stone-100;
-	}
-	.btn-secondary {
-		@apply rounded-md bg-black px-5 py-2 font-medium text-white hover:bg-black/80;
-	}
-	.transition {
-		@apply transition-all ease-in-out;
-	}
+  .btn-primary {
+    @apply rounded-md border border-stone-400 px-5 py-2 font-medium hover:bg-stone-100;
+  }
+  .btn-secondary {
+    @apply rounded-md bg-black px-5 py-2 font-medium text-white hover:bg-black/80;
+  }
+  .transition {
+    @apply transition-all ease-in-out;
+  }
 }
 
 /*  Fonts */
 @layer base {
-	/* Inter */
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 900;
-		font-display: swap;
-		src: url('/fonts/Inter-Black.woff2') format('woff2');
-	}
+  /* Inter */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/Inter-Black.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 800;
-		font-display: swap;
-		src: url('/fonts/Inter-ExtraBold.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/Inter-ExtraBold.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 700;
-		font-display: swap;
-		src: url('/fonts/Inter-Bold.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 600;
-		font-display: swap;
-		src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 500;
-		font-display: swap;
-		src: url('/fonts/Inter-Medium.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
-		font-display: swap;
-		src: url('/fonts/Inter-Regular.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+  }
 
-	/* Satoshi */
-	@font-face {
-		font-family: 'Satoshi';
-		font-style: normal;
-		font-weight: 900;
-		font-display: swap;
-		src: url('/fonts/Satoshi-Black.woff2') format('woff2');
-	}
+  /* Satoshi */
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('/fonts/Satoshi-Black.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Satoshi';
-		font-style: normal;
-		font-weight: 700;
-		font-display: swap;
-		src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Satoshi';
-		font-style: normal;
-		font-weight: 500;
-		font-display: swap;
-		src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+  }
 
-	@font-face {
-		font-family: 'Satoshi';
-		font-style: normal;
-		font-weight: 400;
-		font-display: swap;
-		src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
-	}
+  @font-face {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+  }
 }

@@ -1,56 +1,57 @@
 ---
 import FeatureCard from './FeatureCard.astro'
+
 const features = [
-	{
-		iconName: 'creditcard',
-		title: 'Free to use',
-		description: 'Completely free to use. No hidden costs.'
-	},
-	{
-		iconName: 'dashboard',
-		title: 'Convenient dashboard',
-		description: 'Dashboard view giving a clear overview of your job search.'
-	},
-	{
-		iconName: 'list',
-		title: 'Track your job search',
-		description: 'Easily track your job applications.'
-	},
-	{
-		iconName: 'responsive',
-		title: 'Use on all your devices',
-		description: 'Fully responsive and usable on mobile, tablet, and desktop.'
-	},
-	{
-		iconName: 'privacy',
-		title: 'Fully secure and private',
-		description: 'Your personal information is not shared with anyone.'
-	},
-	{
-		iconName: 'code',
-		title: 'Constant new features',
-		description: 'In active development with new features added regularly.'
-	}
+  {
+    iconName: 'creditcard',
+    title: 'Free to use',
+    description: 'Completely free to use. No hidden costs.'
+  },
+  {
+    iconName: 'dashboard',
+    title: 'Convenient dashboard',
+    description: 'Dashboard view giving a clear overview of your job search.'
+  },
+  {
+    iconName: 'list',
+    title: 'Track your job search',
+    description: 'Easily track your job applications.'
+  },
+  {
+    iconName: 'responsive',
+    title: 'Use on all your devices',
+    description: 'Fully responsive and usable on mobile, tablet, and desktop.'
+  },
+  {
+    iconName: 'privacy',
+    title: 'Fully secure and private',
+    description: 'Your personal information is not shared with anyone.'
+  },
+  {
+    iconName: 'code',
+    title: 'Constant new features',
+    description: 'In active development with new features added regularly.'
+  }
 ]
 ---
 
 <section id="features" class="bg-black bg-gradient-to-br py-16 lg:py-36">
-	<div class="mx-auto px-4 lg:max-w-7xl">
-		<div class="md:text-center">
-			<h2 class="mb-4 text-3xl font-bold tracking-tight text-white">Everything you need to manage your job search</h2>
-			<p class="mt-2 text-lg text-white/70">
-				With intuitive features and a clean interface, you can easily track your active job applications, monitor your
-				progress, and stay organized throughout your job hunt, ultimately increasing your chances of landing that dream job.
-			</p>
-		</div>
-	</div>
-	<div
-		class="mx-auto mt-6 grid grid-cols-1 gap-6 px-4 md:mt-12 md:grid-cols-2 lg:mt-20 lg:max-w-7xl lg:grid-cols-3 lg:gap-10"
-	>
-		{
-			features.map(({ iconName, title, description }) => (
-				<FeatureCard iconName={iconName} title={title} description={description} />
-			))
-		}
-	</div>
+  <div class="mx-auto px-4 lg:max-w-7xl">
+    <div class="md:text-center">
+      <h2 class="mb-4 text-3xl font-bold tracking-tight text-white">Everything you need to manage your job search</h2>
+      <p class="mt-2 text-lg text-white/70">
+        With intuitive features and a clean interface, you can easily track your active job applications, monitor your
+        progress, and stay organized throughout your job hunt, ultimately increasing your chances of landing that dream job.
+      </p>
+    </div>
+  </div>
+  <div
+    class="mx-auto mt-6 grid grid-cols-1 gap-6 px-4 md:mt-12 md:grid-cols-2 lg:mt-20 lg:max-w-7xl lg:grid-cols-3 lg:gap-10"
+  >
+    {
+      features.map(({ iconName, title, description }) => (
+        <FeatureCard iconName={iconName} title={title} description={description} />
+      ))
+    }
+  </div>
 </section>
